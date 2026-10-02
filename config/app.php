@@ -170,10 +170,11 @@ return [
          * Application Service Providers...
          */
         AppServiceProvider::class,
-        AuthServiceProvider::class,
+        // AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         EventServiceProvider::class,
         RouteServiceProvider::class,
+        App\Providers\FortifyServiceProvider::class, // ← この行を追加
     ])->toArray(),
 
     /*
